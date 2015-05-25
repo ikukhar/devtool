@@ -1,0 +1,54 @@
+
+GtkButton {
+	background-color: #EEE9E9;
+	border-style: solid;
+  border-width: 1px; 
+  border-color: #CDC9C9;
+}
+
+GtkLinkButton {
+	font-size: 12px;
+	font-weight: bold;
+	color: #b8b4b4;
+	border-style: none;
+}
+
+GtkNotebook:active,
+GtkNotebook:prelight,
+GtkLinkButton:prelight,
+.current_env {	
+  background-color: #f29648;
+}
+
+GtkLinkButton:prelight {	
+  color: black;
+}
+
+GtkScrolledWindow {	
+  border-style: none;
+}
+
+.current_env {	
+  border-style: solid;
+  border-width: 1px;
+  border-color: #CDC9C9;
+  color: black;
+}
+
+
+.stdout_text {
+	font-size: 11px;
+	font-weight: 100; 
+	color: white;
+	background-color: #242424;
+}
+
+.name {
+	font-family: serif; 
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.push_me {
+	font-weight: bold;
+}

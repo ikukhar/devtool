@@ -143,7 +143,7 @@ def on_commit_btn_clicked
   message = @builder['commit_entry'].text
   
   @close_tasks.each do |id|
-    message << " #закрыто #{id}"
+    message << " #закрыто ##{id}"
   end
 
   git_command "commit -m \"#{message.encode('cp1251')}\""

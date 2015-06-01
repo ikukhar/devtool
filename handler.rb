@@ -189,6 +189,16 @@ def on_cmd_tbtn_clicked
 
 end
 
+def on_log_tbtn_clicked
+
+  return unless choose_curent_env?
+
+  Dir.chdir @envs[:current][:path]  do
+    `gitk`
+  end
+
+end
+
 # =================== REMOTE REPO ====================
 
 # def on_check_remote_repo_tbtn_clicked

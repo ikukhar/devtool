@@ -303,6 +303,10 @@ class Devtool
 
   def run_script name
 
+    ENV.delete 'GIT_DIR'
+    ENV.delete 'GIT_WORK_TREE'
+    ENV.delete 'GIT_INDEX_FILE'
+
   	cmd = "#{@envs[:current][:path]}/scripts/#{name}.bat"
   	async_exec(cmd, true)
   	
